@@ -15,11 +15,14 @@
   <body>
     <div id="container">
       <div id="profile">
-        <img src="./assets/Avatar.png" alt="Foto de perfil" />
+        <div id="modal" ">
+          <img src="./assets/Avatar.png" alt="Foto ampliada" />
+        </div>
+        <img class="normal_img" src="./assets/Avatar.png" alt="Foto de perfil" onclick="openModal()" /> 
         <p>@Fadeeedd</p>
       </div>
       <div id="switch" onclick="toggleMode()">
-        <button ></button>
+        <button></button>
         <span></span>
       </div>
       <ul>
@@ -42,13 +45,21 @@
         </li>
       </ul>
       <div id="icons">
-        <a href="https://www.instagram.com/fadeeedd?utm_source=qr&igsh=Z3g0OHh2aWk4ZjI3"
-          target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a
+          href="https://www.instagram.com/fadeeedd?utm_source=qr&igsh=Z3g0OHh2aWk4ZjI3"
+          target="_blank"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
 
-        <a href="https://x.com/fadedsboy" target="_blank"><ion-icon name="logo-x"></ion-icon></a>
+        <a href="https://x.com/fadedsboy" target="_blank"
+          ><ion-icon name="logo-x"></ion-icon
+        ></a>
 
-        <a href="https://www.linkedin.com/in/jo%C3%A3o-felipe-soeiro-1055a425a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-          target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a
+          href="https://www.linkedin.com/in/jo%C3%A3o-felipe-soeiro-1055a425a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
       </div>
       <footer>Feito com ♥ pelo Fadedo</footer>
     </div>
