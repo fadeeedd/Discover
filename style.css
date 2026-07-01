@@ -61,7 +61,7 @@ body * {
   display: flex;
 }
 
-#profile .normal_img{
+#profile #normal_img{
   display: block;
   width: 112px;
   height: 112px;

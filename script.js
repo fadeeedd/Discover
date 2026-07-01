@@ -12,33 +12,15 @@ function toggleMode() {
   }
 }
 
-function openModal() {
-  const modal = document.querySelector("#modal")
-  if (modal) {
-    modal.classList.add("show")
-  }
-}
+const modal = document.querySelector("#modal")
+const profileImg = document.querySelector("#normal_img")
 
-function closeModal() {
-  const modal = document.querySelector("#modal")
-  if (modal) {
+profileImg.addEventListener("click", () => {
+  modal.classList.add("show")
+})
+
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) {
     modal.classList.remove("show")
-  }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const profileImg = document.querySelector("#profileImg")
-  const modal = document.querySelector("#modal")
-
-  if (profileImg) {
-    profileImg.addEventListener("click", openModal)
-  }
-
-  if (modal) {
-    modal.addEventListener("click", (event) => {
-      if (event.target === modal) {
-        closeModal()
-      }
-    })
   }
 })
